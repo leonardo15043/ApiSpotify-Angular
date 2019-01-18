@@ -31,7 +31,9 @@
         <td><img [src]="track.album.images | noimage" class="img-thumb"></td>
         <td>{{ track.album.name }}</td>
         <td>{{ track.name }}</td>
-        <td> <audio *ngIf="track.preview_url" [src]="track.preview_url" controls></audio></td>
+        <td>
+            <iframe [src]="track.id | urlsegura:'https://open.spotify.com/embed/track/'" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </td>
       </tbody>
     </table>
   </div>
