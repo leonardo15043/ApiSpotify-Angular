@@ -1,4 +1,7 @@
-
+<div class="card-columns">
+<app-tarjetas [arTarj]="cancion" *ngFor="let cancion of nuevasCanciones" class="card"></app-tarjetas>
+</div>
+<!--
 <div class="card-columns">
   <div *ngFor="let cancion of nuevasCanciones" class="card">
     <img [src]="cancion.images | noimage" class="card-img-top" alt="...">
@@ -9,4 +12,4 @@
       </p>
     </div>
   </div>
-</div>
+</div> -->
