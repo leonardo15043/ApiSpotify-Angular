@@ -1,15 +1,4 @@
+<app-loading *ngIf="loading"></app-loading>
 <div class="card-columns">
-<app-tarjetas [arTarj]="cancion" *ngFor="let cancion of nuevasCanciones" class="card"></app-tarjetas>
+<app-tarjetas [arTarj]="cancion" *ngFor="let cancion of nuevasCanciones" class="card puntero"></app-tarjetas>
 </div>
-<!--
-<div class="card-columns">
-  <div *ngFor="let cancion of nuevasCanciones" class="card">
-    <img [src]="cancion.images | noimage" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">{{cancion.name}}</h5>
-      <p class="card-text">
-        <span *ngFor="let artista of cancion.artists" class="badge badge-pill badge-info">{{ artista.name }}</span>
-      </p>
-    </div>
-  </div>
-</div> -->
